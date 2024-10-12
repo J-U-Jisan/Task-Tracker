@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface GoalRepository {
 
-    Goal create(Goal goal) throws Exception; // Create
+    Goal create(Goal goal); // Create
     Goal update(Goal goal); // Update
     Goal findById(Long id);
     List<Goal> findAll();

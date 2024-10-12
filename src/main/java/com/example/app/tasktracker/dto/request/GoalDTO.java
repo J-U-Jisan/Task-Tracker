@@ -1,18 +1,14 @@
-package com.example.app.tasktracker.model;
+package com.example.app.tasktracker.dto.request;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.*;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 import java.util.Date;
 
-@EqualsAndHashCode(callSuper = true)
 @Data
-@Entity
-@Table(name = "goals")
-public class Goal extends BaseEntity{
-
+public class GoalDTO {
     @NotBlank
     private String name;
 
