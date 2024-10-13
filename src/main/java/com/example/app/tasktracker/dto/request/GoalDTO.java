@@ -12,11 +12,11 @@ public class GoalDTO {
     @NotBlank
     private String name;
 
-    @Max(500)
+    @Size(max=500)
     private String description;
 
     @Min(0)
-    @NotBlank
+    @NotNull
     private Double targetHours;
 
     @Temporal(TemporalType.DATE)  // To store only the date without time.
